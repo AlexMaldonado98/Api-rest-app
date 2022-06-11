@@ -1,0 +1,172 @@
+/*Las propiedades fueron ordenadas depues del video 
+con ayuda de la extension CSSComb.
+Se aplicaron retoques al programa: las propiedades
+implementadas estas en la seccion de hasta abajo*/
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Gentium Plus', serif;
+
+  background-color: rgb(229, 228, 228);
+}
+
+.header{
+  height: 400px;
+  padding-top: 50px;
+
+  text-align: center;
+
+  color: white  ;
+  background-color: rgb(3, 41, 60);
+}
+
+.header h1{
+  margin-bottom: 40px;
+}
+
+.header h3{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 600px;
+  height: 400px;
+
+  user-select: none;
+  transform: translateX(-50%);
+
+  border-radius: 15px;
+  background-color: rgb(255, 246, 246);
+}
+
+.card-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-body-img{
+  width: 100%;
+  height: 120px;
+  margin-bottom: 70px;
+
+  border-bottom: gray 1px solid;
+}
+
+.card-body-img img{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+
+  padding: 5px;
+
+  transform: translateX(-50%);
+
+  border: 1px solid gray;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px inset #cccccc;
+}
+
+.card-body-text{
+  text-align: center;
+}
+.card-body-text h4{
+  font-weight: 400;
+}
+
+.card-body-text h2{
+  margin-top: 20px;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+ul{
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+
+  width: 70%;
+
+  list-style: none;
+}
+
+li{
+  overflow: hidden;
+
+  width: 50px;
+  height: 65px;
+}
+
+li img{
+  position: relative;
+  top: 20px;
+
+  width: 50px;
+
+  transition: all 0.5s ease;
+}
+
+.activo{
+  transform: translateY(-78px);
+}
+
+.card-arrows{
+  font-size: 50px;
+
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+
+  width: 100%;
+
+  transform: translateY(-50%);
+
+  color: rgb(14, 171, 32);
+
+  padding-inline: 20px;
+}
+
+.arrow-right{
+  margin-left: auto;
+}
+
+/*SECCION# Propiedades implementadas despues del video*/
+
+.card-arrows div{
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-arrows div:hover{
+  color: rgb(13, 142, 28);
+}
+
+.arrow-right:hover{
+  transform: translateX(7px);
+}
+
+.arrow-left:hover{
+  transform: translateX(-7px);
+}
