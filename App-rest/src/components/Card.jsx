@@ -68,15 +68,12 @@ export const Card = ({ users, pedir}) => {
                     h2: `${users[index].login.password}`,
                     name: 'password'
                 });
-                break;
-            default:
-                break;
         }
 
     }
 
     useEffect(() => {
-        getTextos('user');
+        getTextos('user')
     },[index]);
 
     return (
